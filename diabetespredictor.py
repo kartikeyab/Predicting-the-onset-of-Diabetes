@@ -25,7 +25,7 @@ model.add(Dense(50, activation= 'relu'))
 model.add(Dense(1, activation='sigmoid'))
 model.compile(loss = 'mean_squared_error', optimizer = 'adam')
 
-#training the model
+#training
 model.fit(X_train,Y_train, epochs= 50 , verbose = 2 , shuffle = True)
 
 #performance on the test set
