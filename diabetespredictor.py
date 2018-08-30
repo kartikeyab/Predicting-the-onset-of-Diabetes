@@ -10,7 +10,7 @@ training_data_df = pd.read_csv('diabetes_data_training_scaled.csv')
 X = training_data_df.drop('Outcome', axis =1).values 
 Y = training_data_df[['Outcome']].values
 
-X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 0.1)
+X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 0.2)
 
 #define model
 model = Sequential()
